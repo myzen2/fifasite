@@ -8,26 +8,67 @@ hello
          <link rel="stylesheet" href="css/style.css">
       </head>
       <body>
+        <form action="register.php" method="post">
+          <div class="container">
+            <table>
+              <tr>
+                <td>
+                  <label>pseudo</label>
+                  <input  name="pseudo" required/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>first name</label>
+                  <input type="text" name="first_name" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>last name</label>
+                  <input  name="last_name" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>birthday</label>
+                  <input type="date" name="birthday" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>position</label>
+                  <input  name="position" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>number</label>
+                  <input  name="number" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required><br/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--label>id</label-->
+                  <input type="hidden" /><br/>
+                </td>
+              </tr>
+            </table>
 
-<form action="/action_page.php">
- <div class="container">
-   <label><b>Email</b></label>
-   <input type="text" placeholder="Enter Email" name="email" required>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-   <label><b>Password</b></label>
-   <input type="password" placeholder="Enter Password" name="psw" required>
-
-   <label><b>Repeat Password</b></label>
-   <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-   <input type="checkbox" checked="checked"> Remember me
-   <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-   <div class="clearfix">
-     <button type="button"  class="cancelbtn">Cancel</button>
-     <button type="submit" class="signupbtn">Sign Up</button>
-   </div>
- </div>
-</form>
+            <div class="clearfix">
+              <button type="button"  class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
 
 </body>
 </html>

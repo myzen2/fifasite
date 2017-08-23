@@ -30,7 +30,16 @@ button {
 .container {
     padding: 16px;
 }
-
+table{
+    margin:auto;
+    border: 1px solid grey;
+}
+tr{
+  border: 1px solid grey;
+}
+td{
+    text-align: right;
+}
 /* Clear floats */
 .clearfix::after {
     content: "";
